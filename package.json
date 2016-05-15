@@ -1,0 +1,30 @@
+{
+  "name": "image-diff-view",
+  "version": "1.0.0",
+  "description": "Compares images, inspired by Github's image diff view modes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/a-x-/image-diff-view.git"
+  },
+  "keywords": [
+    "image",
+    "visual",
+    "diff",
+    "view",
+    "github",
+    "compare",
+    "onion",
+    "skin",
+    "difference"
+  ],
+  "author": "Alexander Mextner <invntrm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-x-/image-diff-view/issues"
+  },
+  "homepage": "https://github.com/a-x-/image-diff-view#readme"
+}
