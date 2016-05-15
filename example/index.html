@@ -1,0 +1,21 @@
+<link rel='stylesheet' href='../index.css' type='text/css' charset='utf-8'>
+<div class='image-diff' id='image-diff'>
+  <div class='image-diff__inner'>
+    <div class='image-diff__before'>
+      <img/>
+    </div>
+    <div class='image-diff__wrapper'>
+      <div class='image-diff__after'>
+        <img/>
+      </div>
+    </div>
+  </div>
+</div>
+<script src='../index.js'></script>
+<script>
+var beforeUrl = 'http://cezary.github.io/react-image-diff/public/img/spot-the-difference-a.jpg',
+    afterUrl = 'http://cezary.github.io/react-image-diff/public/img/spot-the-difference-b.jpg';
+
+var imageDiff = new ImageDiff(document.getElementById('image-diff'), beforeUrl, afterUrl, 'swipe');
+imageDiff.swipe(0.5);
+</script>
