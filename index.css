@@ -23,8 +23,10 @@
     position: absolute;
 }
 
-.image-diff__inner:not(.image-diff__inner--difference) .image-diff__wrapper {
+/* fix border color in left fade pos */
+.image-diff__inner--fade .image-diff__wrapper {
     z-index: 1;
+    position: absolute;
 }
 
 .image-diff__wrapper {
