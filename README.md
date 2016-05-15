@@ -3,7 +3,8 @@ Compares images, inspired by Github's [image diff view modes](https://github.com
 
 Inspered by https://github.com/cezary/react-image-diff also ([Demo](http://cezary.github.io/react-image-diff/)).
 
-![Gif image diff view demo](https://github.com/cezary/react-image-diff/blob/master/public/img/demo-swipe.gif)
+![Gif image diff view swipe demo](https://github.com/cezary/react-image-diff/blob/master/public/img/demo-swipe.gif)
+![Gif image diff view fade demo](https://github.com/cezary/react-image-diff/blob/master/public/img/demo-fade.gif)
 
 ## Modes
 * `difference` (classic diff)
@@ -13,6 +14,8 @@ Inspered by https://github.com/cezary/react-image-diff also ([Demo](http://cezar
 ## Usage
 Controls are not delivery out of the box.
 You are free to implement your unique diff controls.
+
+`npm install react-image-diff`
 
 ```js
 import ImageDiff from 'image-diff-view';
