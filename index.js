@@ -42,7 +42,8 @@ var ImageDiff = function () {
       beforeWrapper: $(domElem, '.image-diff__before'),
       afterWrapper: $(domElem, '.image-diff__after'),
       wrapper: $(domElem, '.image-diff__wrapper'),
-      inner: $(domElem, '.image-diff__inner')
+      inner: $(domElem, '.image-diff__inner'),
+      self: $(domElem, '.image-diff')
     }
 
     this.domElems.before.onload=this._handleImgLoad();
@@ -130,7 +131,7 @@ var ImageDiff = function () {
 
       Object.keys(sizes).forEach(function(key) {
         var val = sizes[key];
-        ['afterWrapper', 'beforeWrapper', 'wrapper', 'inner'].forEach(function (elem) {
+        ['afterWrapper', 'beforeWrapper', 'wrapper', 'inner', 'self'].forEach(function (elem) {
           _this.domElems[elem].style[key] = val + 'px';
         });
       });
