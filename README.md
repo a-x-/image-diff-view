@@ -15,7 +15,7 @@ Inspered by https://github.com/cezary/react-image-diff also ([Demo](http://cezar
 Controls are not delivery out of the box.
 You are free to implement your unique diff controls.
 
-`npm install react-image-diff`
+`npm install image-diff-view`
 
 ```js
 import ImageDiff from 'image-diff-view';
