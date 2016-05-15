@@ -25,7 +25,6 @@
 
 .image-diff__inner:not(.image-diff__inner--difference) .image-diff__wrapper {
     z-index: 1;
-    position: relative;
 }
 
 .image-diff__wrapper {
