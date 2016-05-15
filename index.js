@@ -43,7 +43,7 @@ var ImageDiff = function () {
       afterWrapper: $(domElem, '.image-diff__after'),
       wrapper: $(domElem, '.image-diff__wrapper'),
       inner: $(domElem, '.image-diff__inner'),
-      self: $(domElem, '.image-diff')
+      self: domElem
     }
 
     this.domElems.before.onload=this._handleImgLoad();
@@ -158,7 +158,7 @@ var ImageDiff = function () {
   return ImageDiff;
 }();
 
-if (module && module.exports) {
+if (typeof module !== 'undefined' && module.exports) {
   module.exports = ImageDiff;
 } else if (window) {
   window.ImageDiff = ImageDiff;
