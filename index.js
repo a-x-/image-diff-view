@@ -101,15 +101,26 @@ var ImageDiff = function () {
    */
   ImageDiff.prototype.fade = function fade(value) {
     this._updateValue('fade', value);
-    this.domElems.wrapper.style.opacity = value;
+    this.domElems.wrapper.style.opacity = 1. - value;
+  };
+
+  /**
+   * @param {Float} value - 0..1
+   * @public
+   */
+  ImageDiff.prototype.tune = function tune(value) {
+    this._updateValue(null, value);
   };
 
   ImageDiff.prototype._updateValue = function _updateValue(mode, value) {
     if (value < 0-1e-6 || value > 1.+1e-6) {
       throw mode + ' value must be within 0..1, but given:' + value;
     }
-    if (this.props.mode !== mode) {
+    if (mode && this.props.mode !== mode) {
       throw 'current diff mode is ' + this.props.mode + ', not ' + mode;
+    }
+    if (this.props.mode === 'difference') {
+      throw 'current diff mode (' + this.props.mode + ') is not tunable';
     }
     this.props.value = value;
   };
@@ -144,6 +155,8 @@ var ImageDiff = function () {
     }
     this.props.mode = mode;
     this.domElems.inner.className = 'image-diff__inner image-diff__inner--' + mode;
+    this.domElems.wrapper.style.opacity = 1;
+    this.domElems.wrapper.style.width = this.props.width;
   };
 
   ImageDiff.prototype._handleImgLoad = function _handleImgLoad() {
