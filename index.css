@@ -25,6 +25,8 @@
 
 .image-diff__wrapper {
     box-shadow: 0 0 0 1px #63c363;
+    z-index: 1;
+    position: relative;
 }
 
 /*
