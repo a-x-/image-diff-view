@@ -28,3 +28,6 @@ imageDiff.fade(0.8);
 
 ## Dependencies
 No dependencies required
+
+## Our users
+* Yandex
