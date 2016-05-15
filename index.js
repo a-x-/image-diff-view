@@ -157,7 +157,7 @@ var ImageDiff = function () {
   return ImageDiff;
 }();
 
-if (module.exports) {
+if (module && module.exports) {
   module.exports = ImageDiff;
 } else if (window) {
   window.ImageDiff = ImageDiff;
