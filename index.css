@@ -51,6 +51,7 @@
 
 .image-diff__inner--difference {
     position: relative;
+    -webkit-filter: invert(1); /* white base color instead of black */
 }
 
 /*
