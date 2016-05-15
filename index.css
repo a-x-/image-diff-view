@@ -1,0 +1,58 @@
+.image-diff {
+    display: inline-block;
+}
+
+.image-diff__inner {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUAQMAAAC3R49OAAAABlBMVEX5+fn///8pDrwNAAAAFElEQVQI12NgsP/AQAz+f4CBGAwAJIIdTTn0+w0AAAAASUVORK5CYII=);
+
+    margin: 0;
+    position: absolute;
+}
+
+.image-diff__before {
+    border: 1px solid #f77;
+    right: 0px;
+
+    margin: 0;
+    position: absolute;
+}
+
+.image-diff__after {
+    border: 1px solid #63c363;
+    right: 0;
+
+    margin: 0;
+    position: absolute;
+}
+
+/*
+ * difference mode
+ */
+
+.image-diff__inner--difference .image-diff__after img {
+    mix-blend-mode: difference;
+}
+
+.image-diff__inner--difference .image-diff__before,
+.image-diff__inner--difference .image-diff__after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: none;
+}
+
+.image-diff__inner--difference {
+    position: relative;
+}
+
+/*
+ * swipe mode
+ */
+
+.image-diff__inner--swipe .image-diff__wrapper {
+    border-left: 1px solid #999;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    right: -2;
+}
