@@ -110,7 +110,7 @@ var ImageDiff = function () {
    */
   ImageDiff.prototype.tune = function tune(value) {
     var tuner = this[this.props.mode];
-    tuner && tuner(value);
+    tuner && tuner.call(this, value);
   };
 
   ImageDiff.prototype._updateValue = function _updateValue(mode, value) {
