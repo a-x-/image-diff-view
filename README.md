@@ -27,6 +27,7 @@ var imageDiff = new ImageDiff(document.getElementById('image-diff'), beforeUrl, 
 imageDiff.swipe(0.5);
 imageDiff.update(beforeUrl, afterUrl, 'fade');
 imageDiff.fade(0.8);
+imageDiff.tune(0.4); // abstract tune method rather than fade/swipe()
 ```
 
 ## Dependencies
